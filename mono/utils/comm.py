@@ -5,13 +5,8 @@ from .avg_meter import AverageMeter
 from collections import defaultdict, OrderedDict
 import os
 import socket
-from mmcv.utils import collect_env as collect_base_env
-try:
-    from mmcv.utils import get_git_hash
-except:
-    from mmengine.utils import get_git_hash
-#import mono.mmseg as mmseg
-# import mmseg
+from mono.utils.mmcv_utils import collect_env as collect_base_env
+
 import time
 import datetime
 import logging
